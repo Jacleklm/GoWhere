@@ -1,0 +1,116 @@
+{
+  "ret": true,
+  "data": {
+    "detail": [{
+      "id": "0001",
+      "sightName": "故宫(AAAAA景区)",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+      "gallaryImgs": ["//img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_800x800_6360f514.jpg", "//img1.qunarzz.com/sight/p0/1907/cd/cdd8448b61cd6042a3.img.jpg_r_800x800_e8f50aa2.jpg"],
+      "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+    }, {
+      "id": "0002",
+      "sightName": "南山滑雪场",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_600x330_cbd1e1e9.jpg",
+      "gallaryImgs": ["//img1.qunarzz.com/sight/p0/201403/07/f5a1ec3a082bf8080ca2463d928a3db6.jpg_r_800x800_b383a374.jpg", "//img1.qunarzz.com/sight/p0/201403/07/d7040ce3a5a3a175f13be14ef087de73.jpg_r_800x800_ef06c1df.jpg"],
+      "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+    }, {
+      "id": "0003",
+      "sightName": "天安门广场",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_600x330_371120bc.jpg",
+      "gallaryImgs": ["//img1.qunarzz.com/sight/p0/201303/01/0e6b288eb7b1f5ccc8d65eac.jpg_r_800x800_f5849be4.jpg", "//img1.qunarzz.com/sight/p0/1501/28/286fb794a2d4dd42.water.jpg_r_800x800_f899c854.jpg"],
+      "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+    }, {
+      "id": "0004",
+      "sightName": "水立方",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_600x330_95a1ab2b.jpg",
+      "gallaryImgs": ["//img1.qunarzz.com/sight/p0/201403/10/f78fd60f6201bdc1f536c8f31941e306.jpg_r_800x800_26b679ef.jpg", "//img1.qunarzz.com/sight/p0/201403/10/6a18aabe4e02e211552c25da2c8d6c93.jpg_r_800x800_dc604303.jpg"],
+      "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+    }, {
+      "id": "0005",
+      "sightName": "温都水城养生馆",
+      "bannerImg": "//img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_600x330_390c414c.jpg",
+      "gallaryImgs": ["//img1.qunarzz.com/sight/p0/1501/a3/a32ba58d6dd21b9f.water.jpg_r_800x800_10d07c4b.jpg", "//img1.qunarzz.com/sight/p0/1502/c6/c61f1ce70a4f938a.water.jpg_r_800x800_3b05d3be.jpg"],
+      "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+    }]
+  }
+}

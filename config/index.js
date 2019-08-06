@@ -10,7 +10,14 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api': {//  在开发环境中（dev），当去请求api目录的时候
+        target: 'http://localhost:8080',// 会把请求转发到当前服务器的8080端口上
+        pathRewrite: {//  不过希望把路径做一个替换
+          '^/api': '/static/mock'//  一旦请求的地址是以/api开头的，那么就替换请求到...中
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
