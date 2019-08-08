@@ -5,6 +5,8 @@
     <home-icons :list="iconList"></home-icons>
     <home-recommend :list="recommendList"></home-recommend>
     <home-weekend :list="weekendList"></home-weekend>
+    <home-footer></home-footer>
+    <home-blank></home-blank>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
+import HomeFooter from './components/Footer'
+import HomeBlank from './components/Blank'
 import axios from 'axios'
 export default {
   name: 'Home',
@@ -22,7 +26,9 @@ export default {
     HomeSwiper,
     HomeIcons,
     HomeRecommend,
-    HomeWeekend
+    HomeWeekend,
+    HomeFooter,
+    HomeBlank
   },
   data () {
     return {

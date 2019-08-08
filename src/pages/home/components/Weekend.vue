@@ -32,8 +32,8 @@ export default {
   .weekend-title
     background: $titleColor
     font-size: .32rem
-    height: $titleHeight
-    line-height: $titleHeight
+    height: $contentTitleHeight
+    line-height: $contentTitleHeight
     text-indent: .2rem
   .border-bottom
     border-color: #ccc

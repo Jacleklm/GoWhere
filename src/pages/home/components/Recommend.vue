@@ -34,8 +34,8 @@ export default {
   .recommmend-title
     background: $titleColor
     font-size: .32rem
-    height: $titleHeight
-    line-height: $titleHeight
+    height: $contentTitleHeight
+    line-height: $contentTitleHeight
     .title-img
       margin-left: 0.2rem
       width: .3rem
