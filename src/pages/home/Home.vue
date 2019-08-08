@@ -3,6 +3,7 @@
     <home-header></home-header>
     <home-swiper :list="swiperList"></home-swiper>
     <home-icons :list="iconList"></home-icons>
+    <home-hotswiper :list="hotswiperList"></home-hotswiper>
     <home-recommend :list="recommendList"></home-recommend>
     <home-weekend :list="weekendList"></home-weekend>
     <home-footer></home-footer>
@@ -18,6 +19,7 @@ import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import HomeFooter from './components/Footer'
 import HomeBlank from './components/Blank'
+import HomeHotswiper from './components/Hotswiper'
 import axios from 'axios'
 export default {
   name: 'Home',
@@ -28,14 +30,16 @@ export default {
     HomeRecommend,
     HomeWeekend,
     HomeFooter,
-    HomeBlank
+    HomeBlank,
+    HomeHotswiper
   },
   data () {
     return {
       swiperList: [],
       iconList: [],
       recommendList: [],
-      weekendList: []
+      weekendList: [],
+      hotswiperList: []
     }
   },
   methods: {
@@ -51,6 +55,7 @@ export default {
         this.iconList = data.iconList
         this.recommendList = data.recommendList
         this.weekendList = data.weekendList
+        this.hotswiperList = data.hotswiperList
       }
     }
   },

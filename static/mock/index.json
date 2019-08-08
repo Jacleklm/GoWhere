@@ -58,10 +58,36 @@
         "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/bda58ffc3016edad84e656e8a94b0321.png",
         "desc": "广州融创"
       }],
+    "hotswiperList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg",
+      "title": "长隆野生动物世界",
+      "price": "263"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/88/889ae02b07140066a3.img.jpg_200x200_d3b1427c.jpg",
+      "title": "长隆欢乐世界",
+      "price": "208"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/201403/07/533f2f0bfc8ce2d81c574fa904e6c011.jpg_200x200_9b0e818b.jpg",
+      "title": "广州番禺莲花山",
+      "price": "156"
+    }, {
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/d8/d89ab1a9b2ab355ba3.img.jpg_200x200_8fc1af97.jpg",
+      "title": "长隆水上乐园",
+      "price": "179"
+    }, {
+      "id": "0005",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/201402/25/d7350cde8074ae2fbb76fea524502672.jpg_200x200_eeffee07.jpg",
+      "title": "南沙水鸟世界生态园",
+      "price": "120"
+    }],
     "recommendList": [{
         "id": "0001",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg",
-        "title": "长隆野生动物园",
+        "title": "长隆野生动物世界",
         "desc": "熊猫三胞胎与您共享欢乐时光"
       }, {
         "id": "0002",
