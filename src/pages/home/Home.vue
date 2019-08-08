@@ -21,6 +21,7 @@ import HomeFooter from './components/Footer'
 import HomeBlank from './components/Blank'
 import HomeHotswiper from './components/Hotswiper'
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
   name: 'Home',
   components: {
@@ -35,6 +36,7 @@ export default {
   },
   data () {
     return {
+      lastCity: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -44,8 +46,8 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json')
-        .then(this.getHomeInfoReso)
+      axios.get('/api/index.json?city=' + this.city)//  获取Ajax数据可以用的方法，去请求一个url（即是括号里的内容）
+        .then(this.getHomeInfoReso)//  axios返回的是一个promise对象，所以可以用then方法
     },
     getHomeInfoReso (res) {
       res = res.data
@@ -59,8 +61,18 @@ export default {
       }
     }
   },
+  computed: {
+    ...mapState(['city'])
+  },
   mounted () {
     this.getHomeInfo()
+    this.lastCity = this.city
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>

@@ -6,16 +6,20 @@
     <div class="header-input">
       <span class="iconfont icon-choose">&#xe7d2;</span>&nbsp;输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
-      广州
+    <router-link tag="div" to="/city" class="header-right">
+      {{this.city}}
       <span class="iconfont icon-choose">&#xe65a;</span>
-    </div>
+    </router-link>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  computed: {
+    ...mapState(['city'])
+  }
 }
 </script>
 
