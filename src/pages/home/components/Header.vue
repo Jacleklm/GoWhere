@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~styles/varibles'
+  @import '~styles/varibles.styl'
   .header
     width: 100%
     line-height: $titleHeight
@@ -46,5 +46,5 @@ export default {
       background: #fff
       color: #cccccc
       border-radius: .1rem
-      margin: .12rem 0 .1rem 0
+      margin-top: .08rem
 </style>

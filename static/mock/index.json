@@ -60,55 +60,55 @@
       }],
     "recommendList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-        "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg",
+        "title": "长隆野生动物园",
+        "desc": "熊猫三胞胎与您共享欢乐时光"
       }, {
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-        "title": "南山滑雪场",
-        "desc": "北京专业级滑雪圣地"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/88/889ae02b07140066a3.img.jpg_200x200_d3b1427c.jpg",
+        "title": "长隆欢乐世界",
+        "desc": "爱挑战的你怎能错过垂直过山车"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-        "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/201403/07/533f2f0bfc8ce2d81c574fa904e6c011.jpg_200x200_9b0e818b.jpg",
+        "title": "广州番禺莲花山",
+        "desc": "走进大自然，洗去一身疲惫"
       }, {
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-        "title": "水立方",
-        "desc": "中国的荣耀，阳光下的晶莹水滴"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/d8/d89ab1a9b2ab355ba3.img.jpg_200x200_8fc1af97.jpg",
+        "title": "长隆水上乐园",
+        "desc": "“巨蟒”滑道带给你肾上腺素的冲击"
       }, {
         "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
-        "title": "温都水城养生馆",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/201402/25/d7350cde8074ae2fbb76fea524502672.jpg_200x200_eeffee07.jpg",
+        "title": "南沙水鸟世界生态园",
         "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
       }],
     "weekendList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
-        "title": "北京温泉排行榜",
-        "desc": "细数北京温泉，温暖你的冬天"
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1812/47/cbdc44f461db0d.jpg_r_640x214_aab1da76.jpg",
+        "title": "珠江夜游",
+        "desc": "绚烂的霓虹将珠江照亮，跳上一艘游船，沉浸在这醉人的夜色中..."
       }, {
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
-        "title": "北京必游TOP10",
-        "desc": "来北京必去的景点非这些地方莫属"
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/92/580e9ea4f37a1b.jpg_r_640x214_72112761.jpg",
+        "title": "广州必打卡",
+        "desc": "感受现代与传统相融合的广州"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-        "title": "寻找北京的皇城范儿",
-        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1811/f8/29dfa785277839.jpg_r_640x214_7d051523.jpg",
+        "title": "阳江温泉知多少",
+        "desc": "这里的天空和大海让人心旷神怡，配上舒缓的优美音乐，泡个暖暖的温泉岂不美哉"
       }, {
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
-        "title": "学生最爱的博物馆",
-        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+        "title": "清远周边逛",
+        "desc": "人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
       }, {
         "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
-        "title": "儿童剧场，孩子的乐园",
-        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+        "title": "浮在海上的绿洲",
+        "desc": "南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
       }]
   }
 }
