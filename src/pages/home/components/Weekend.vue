@@ -3,7 +3,7 @@
     <div class="weekend-title">
       <span>周末去哪儿</span>
     </div>
-    <div
+    <router-link tag="div" :to="'/detail/'+item.id"
       class="weekend-content border-bottom"
       v-for="item of list"
       :key="item.id"
@@ -13,7 +13,7 @@
         <p class="content-desc-title">{{item.title}}</p>
         <p class="content-desc-desc">{{item.desc}}</p>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 

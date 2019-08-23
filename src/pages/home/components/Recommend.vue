@@ -4,7 +4,7 @@
       <img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png">
       <span>猜你喜欢</span>
     </div>
-    <div
+    <router-link tag="div" :to="'/detail/'+item.id"
       class="recommmend-content border-bottom"
       v-for="item of list"
       :key="item.id"
@@ -15,7 +15,7 @@
         <p class="content-desc-desc">{{item.desc}}</p>
         <span class="content-desc-detail">查看详情</span>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 

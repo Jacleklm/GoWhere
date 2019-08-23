@@ -1,51 +1,48 @@
 <template>
   <div>
-    6
+    <detail-header></detail-header>
+    <detail-banner :list="bannerList" :gallaryImgs="gallaryImgs"></detail-banner>
   </div>
 </template>
 
 <script>
+import DetailBanner from './components/Banner'
+import DetailHeader from './components/Header'
 import axios from 'axios'
 export default {
-  name: 'Home',
+  name: 'Detail',
   components: {
-    HomeHeader,
-    HomeSwiper,
-    HomeIcons,
-    HomeRecommend,
-    HomeWeekend,
-    HomeFooter,
-    HomeBlank,
-    HomeHotswiper
+    DetailBanner,
+    DetailHeader
   },
   data () {
     return {
-      swiperList: [],
-      iconList: [],
-      recommendList: [],
-      weekendList: [],
-      hotswiperList: []
+      bannerList: {},
+      gallaryImgs: [],
+      categoryList: []
     }
   },
   methods: {
-    getHomeInfo () {
-      axios.get('/api/index.json')
-        .then(this.getHomeInfoReso)
+    getDetailInfo () {
+      axios.get('/api/detail.json')//  获取Ajax数据可以用的方法，去请求一个url（即是括号里的内容）
+        .then(this.getDetailInfoReso)//  axios返回的是一个promise对象，所以可以用then方法
     },
-    getHomeInfoReso (res) {
+    getDetailInfoReso (res) {
       res = res.data
       if (res.ret && res.data) {
-        const data = res.data
-        this.swiperList = data.swiperList
-        this.iconList = data.iconList
-        this.recommendList = data.recommendList
-        this.weekendList = data.weekendList
-        this.hotswiperList = data.hotswiperList
+        res = res.data.detail
+        res.forEach((item) => {
+          if (item.id === this.$route.params.id) {
+            this.bannerList = item.bannerList
+            this.gallaryImgs = item.gallaryImgs
+            this.categoryList = item.categoryList
+          }
+        })
       }
     }
   },
   mounted () {
-    this.getHomeInfo()
+    this.getDetailInfo()
   }
 }
 </script>
