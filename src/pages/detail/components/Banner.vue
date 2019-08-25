@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="banner">
+    <div class="banner" @click="handleCilck">
       <img
         class="banner-img"
         :src="list.bannerImg"
@@ -11,16 +11,33 @@
       </div>
       <div class="banner-fade"></div>
     </div>
-    <div class="content"></div>
+    <common-gallary v-show="showGallary" :list="gallaryImgs" @close="handleGallary"></common-gallary>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  components: {
+    CommonGallary
+  },
   props: {
     list: Object,
     gallaryImgs: Array
+  },
+  data () {
+    return {
+      showGallary: false
+    }
+  },
+  methods: {
+    handleCilck () {
+      this.showGallary = !this.showGallary
+    },
+    handleGallary () {
+      this.showGallary = !this.showGallary
+    }
   }
 }
 </script>
@@ -60,8 +77,5 @@ export default {
       bottom: 0rem
       width: 100%
       height: 11%
-      background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1))
-  .content
-    height: 15rem
-    background: #ccc
+      background: linear-gradient(rgba(0,0,0,0),#363636)
 </style>

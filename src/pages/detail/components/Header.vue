@@ -32,10 +32,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.hanedleScroll)
   },
-  deactivated () {
+  beforeDestroy () {
     window.removeEventListener('scroll', this.hanedleScroll)
   }
 }
