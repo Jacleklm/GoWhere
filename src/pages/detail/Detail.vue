@@ -2,24 +2,31 @@
   <div>
     <detail-header></detail-header>
     <detail-banner :list="bannerList" :gallaryImgs="gallaryImgs"></detail-banner>
+    <detail-recommend :list="recommendList"></detail-recommend>
+    <detail-commment :list="categoryList"></detail-commment>
   </div>
 </template>
 
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
+import DetailComment from './components/Comment'
+import DetailRecommend from './components/Recommend'
 import axios from 'axios'
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
-    DetailHeader
+    DetailHeader,
+    DetailRecommend,
+    DetailComment
   },
   data () {
     return {
       bannerList: {},
       gallaryImgs: [],
-      categoryList: []
+      categoryList: [],
+      recommendList: []
     }
   },
   methods: {
@@ -36,6 +43,7 @@ export default {
             this.bannerList = item.bannerList
             this.gallaryImgs = item.gallaryImgs
             this.categoryList = item.categoryList
+            this.recommendList = item.recommendList
           }
         })
       }
