@@ -3,7 +3,7 @@
     <detail-header></detail-header>
     <detail-banner :list="bannerList" :gallaryImgs="gallaryImgs"></detail-banner>
     <detail-recommend :list="recommendList"></detail-recommend>
-    <detail-commment :list="categoryList"></detail-commment>
+    <detail-comment :list="categoryList"></detail-comment>
   </div>
 </template>
 
