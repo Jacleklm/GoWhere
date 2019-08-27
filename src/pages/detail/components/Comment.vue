@@ -1,39 +1,87 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="title border-bottom">用户评论</div>
-    <div class="comment-total">
-      <div class="comment-total-star">
-        <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;</span>
-        <span class="iconfont dark">&#xe61a;&#xe61a;</span>
+    <div class="border-bottom">
+      <div class="comment-total">
+        <div class="comment-total-star">
+          <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;</span>
+          <span class="iconfont dark">&#xe61a;&#xe61a;</span>
+        </div>
+        Jacle 2019-05-19
       </div>
-      Jacle 2019-05-19
+      <div class="comment-dsc">
+        野生动物园非常的大，动物种类非常的多，一天带孩子走下来，几个景点没有逛到。小火车非常的不错，可以近距离观看动物。排队用了1:30小时，缆车没去做，太浪费时间了，实在太多人了。建议开园就进去观看。大马戏非常值得观看，票价贵是有道理的，杂技演员非常的厉害👍👍👍
+        我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的
+      </div>
+      <div class="open" @click="changeShowAll">
+        <span class="iconfont" v-show="showAll">&#xe62e;</span>
+        <span class="iconfont" v-show="!showAll">&#xe62d;</span>
+      </div>
+      <div class="pic">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+      </div>
     </div>
-    <div class="comment-dsc">
-      南沙湿地公园，广州的最南端，珠江入海口，这里称为“伶仃洋”，就是文天祥”零丁洋里叹零丁”的地方，水天一色，候鸟天堂，好看。改进建议：坐船游览湿地要另外花费100元，乘坐的人很少，觉得不值，建议稍微提高门票价格，比如七八十元，包含船费，这样比较多；沿着十九涌的道路（海翔哭路）上停满了车，灰尘很大，游客走路也不安全，建议海翔路沿湿地一侧修木栈道，人车分流。
+    <div class="border-bottom">
+      <div class="comment-total">
+        <div class="comment-total-star">
+          <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;</span>
+          <span class="iconfont dark">&#xe61a;&#xe61a;</span>
+        </div>
+        Jacle 2019-05-19
+      </div>
+      <div class="comment-dsc">
+        野生动物园非常的大，动物种类非常的多，一天带孩子走下来，几个景点没有逛到。小火车非常的不错，可以近距离观看动物。排队用了1:30小时，缆车没去做，太浪费时间了，实在太多人了。建议开园就进去观看。大马戏非常值得观看，票价贵是有道理的，杂技演员非常的厉害👍👍👍
+        我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的
+      </div>
+      <div class="open" @click="changeShowAll">
+        <span class="iconfont" v-show="showAll">&#xe62e;</span>
+        <span class="iconfont" v-show="!showAll">&#xe62d;</span>
+      </div>
+      <div class="pic">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+      </div>
     </div>
-    <div class="open"></div>
-    <div class="pic">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      <img src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-    </div>
+    <div class="iconfont allcomment">查看全部评论&#xe62f;</div>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailComment',
   props: {
     list: Array
+  },
+  components: {
+    CommonGallary
+  },
+  data () {
+    return {
+      showAll: true
+    }
+  },
+  methods: {
+    changeShowAll () {
+      this.showAll = !this.showAll
+    }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
+  .wrapper
+    border-bottom: .2rem solid rgb(245, 245, 245)
   .title
     color: #333
     height: .88rem
@@ -52,15 +100,47 @@ export default {
     -moz-border-radius: .04rem;
     border-radius: .04rem;
   .comment-total
+    padding: .3rem .2rem .1rem .2rem
     text-align: right
     padding-right: .2rem
     overflow: hidden
+    line-height: .32rem
+    font-size: .24rem
     .comment-total-star
       float: left
+      font-size: .24rem
       .light
         color: #ff9800
+        font-size: .24rem
       .dark
+        font-size: .24rem
         position: relative
         color: #ccc
         left: -.07rem
+  .comment-dsc
+    height: 2.1rem
+    overflow: hidden
+    padding: 0 .2rem 0 .2rem
+    font-size: .26rem
+    line-height: .42rem
+    color: #616161
+  .open
+    text-align: center
+    line-height: .4rem
+    color: #9e9e9e
+  .pic
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: .2rem
+    width: 100%
+    .pic-content
+      width: 30%
+      padding: 0 .1rem .1rem 0
+  .allcomment
+    color: #616161
+    text-align: center
+    line-height: .8rem
+    font-size: .3rem
+    border-top: .02rem dashed #bebebe
 </style>

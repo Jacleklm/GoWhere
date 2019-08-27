@@ -6,7 +6,7 @@
         :src="list.bannerImg"
       >
       <div class="banner-info">
-        <span class="iconfont banner-icon">&#xe663;&nbsp;9</span>
+        <span class="iconfont banner-icon">&#xe663;&nbsp;{{imgNum}}</span>
         <div class="banner-title">{{list.sightName}}</div>
       </div>
       <div class="banner-fade"></div>
@@ -25,6 +25,7 @@ export default {
   props: {
     list: Object,
     gallaryImgs: Array
+
   },
   data () {
     return {
@@ -37,6 +38,11 @@ export default {
     },
     handleGallary () {
       this.showGallary = !this.showGallary
+    }
+  },
+  computed: {
+    imgNum () {
+      return this.gallaryImgs.length
     }
   }
 }
