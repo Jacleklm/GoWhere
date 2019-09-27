@@ -1,8 +1,28 @@
-# gowhere
+## Vue仿制移动端去哪儿网（可预览）
+项目预览地址：[Vue-GoWhere]()
+github地址：[项目的github地址](https://github.com/Jacleklm/GoWhere/)
+二维码：
 
-> A Vue.js project
+### 技术栈
+##### vue
+##### vue-router
+##### vuex
+##### axios
+##### vue-cli3
+##### stylus
+##### json
 
-## Build Setup
+### 实现的功能
+[ ] 首页
+[ ] 景点详情页
+[ ] 城市搜索页
+
+### 项目截图
+
+### 项目目录结构
+
+
+### Build Setup
 
 ``` bash
 # install dependencies
