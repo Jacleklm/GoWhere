@@ -15,9 +15,9 @@ github地址：[项目的github地址](https://github.com/Jacleklm/GoWhere/)
 * json
 
 ## 实现的功能
-- [ ] 首页
-- [ ] 景点详情页
-- [ ] 城市搜索页
+- [x] 首页
+- [x] 景点详情页
+- [x] 城市搜索页
 
 ## 项目截图
 
