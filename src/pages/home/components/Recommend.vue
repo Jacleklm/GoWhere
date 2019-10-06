@@ -13,6 +13,11 @@
       <div class="content-desc">
         <p class="content-desc-title">{{item.title}}</p>
         <p class="content-desc-desc">{{item.desc}}</p>
+        <div class="content-desc-price">
+          <span class="content-desc-price-span">￥</span>
+          <span class="content-desc-price-num">{{item.price}}</span>
+          <span>起</span>
+        </div>
         <span class="content-desc-detail">查看详情</span>
       </div>
     </router-link>
@@ -68,7 +73,14 @@ export default {
         font-size: .2rem
         color: rgb(255, 85, 85)
         ellipsis()
-        margin-bottom: .2rem
+      .content-desc-price
+        margin-bottom: .1rem
+        .content-desc-price-span
+          color: rgb(255, 131 0)
+          margin-right: -.12rem
+        .content-desc-price-num
+          color: rgb(255, 131 0)
+          font-size: .4rem
       .content-desc-detail
         background: #ff9300
         padding: .05rem .2rem

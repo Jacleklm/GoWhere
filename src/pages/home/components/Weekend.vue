@@ -56,6 +56,7 @@ export default {
         font-size: .3rem
         line-height: .8rem
       .content-desc-desc
+        padding-right: 1.5rem
         font-size: .2rem
         color: #616161
         ellipsis()
