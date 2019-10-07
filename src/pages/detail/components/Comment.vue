@@ -1,54 +1,31 @@
 <template>
   <div class="wrapper">
     <div class="title border-bottom">用户评论</div>
-    <div class="border-bottom">
+    <div
+      class="border-bottom"
+      v-for="item of list"
+      :key="item.id"
+    >
       <div class="comment-total">
         <div class="comment-total-star">
-          <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;</span>
-          <span class="iconfont dark">&#xe61a;&#xe61a;</span>
+          <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;&#xe61a;</span>
+          <span class="iconfont dark">&#xe61a;</span>
         </div>
-        Jacle 2019-05-19
+        <p>{{item.name}}</p>
       </div>
       <div class="comment-dsc">
-        野生动物园非常的大，动物种类非常的多，一天带孩子走下来，几个景点没有逛到。小火车非常的不错，可以近距离观看动物。排队用了1:30小时，缆车没去做，太浪费时间了，实在太多人了。建议开园就进去观看。大马戏非常值得观看，票价贵是有道理的，杂技演员非常的厉害👍👍👍
-        我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的
+        {{item.comment}}
       </div>
       <div class="open" @click="changeShowAll">
         <span class="iconfont" v-show="showAll">&#xe62e;</span>
         <span class="iconfont" v-show="!showAll">&#xe62d;</span>
       </div>
       <div class="pic">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-      </div>
-    </div>
-    <div class="border-bottom">
-      <div class="comment-total">
-        <div class="comment-total-star">
-          <span class="iconfont light">&#xe61a;&#xe61a;&#xe61a;</span>
-          <span class="iconfont dark">&#xe61a;&#xe61a;</span>
-        </div>
-        Jacle 2019-05-19
-      </div>
-      <div class="comment-dsc">
-        野生动物园非常的大，动物种类非常的多，一天带孩子走下来，几个景点没有逛到。小火车非常的不错，可以近距离观看动物。排队用了1:30小时，缆车没去做，太浪费时间了，实在太多人了。建议开园就进去观看。大马戏非常值得观看，票价贵是有道理的，杂技演员非常的厉害👍👍👍
-        我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的我是多余的多余的多余的
-      </div>
-      <div class="open" @click="changeShowAll">
-        <span class="iconfont" v-show="showAll">&#xe62e;</span>
-        <span class="iconfont" v-show="!showAll">&#xe62d;</span>
-      </div>
-      <div class="pic">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
-        <img class="pic-content" src="http://img1.qunarzz.com/p/tts1/1806/ce/cec46e4a5fb79502.jpg_228x168_25ac0f4d.jpg">
+        <img
+        class="pic-content"
+        v-for="inneritem of item.imgUrl"
+        :key="inneritem.index"
+        :src="inneritem">
       </div>
     </div>
     <div class="iconfont allcomment">查看全部评论&#xe62f;</div>
@@ -80,6 +57,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
+  @import '~styles/mixins.styl'
   .wrapper
     border-bottom: .2rem solid rgb(245, 245, 245)
   .title

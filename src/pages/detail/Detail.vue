@@ -3,7 +3,7 @@
     <detail-header></detail-header>
     <detail-banner :list="bannerList" :gallaryImgs="gallaryImgs"></detail-banner>
     <detail-recommend :list="recommendList"></detail-recommend>
-    <detail-comment :list="categoryList"></detail-comment>
+    <detail-comment :list="commentList"></detail-comment>
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
       bannerList: {},
       gallaryImgs: [],
       categoryList: [],
-      recommendList: []
+      recommendList: [],
+      commentList: []
     }
   },
   methods: {
@@ -44,6 +45,7 @@ export default {
             this.gallaryImgs = item.gallaryImgs
             this.categoryList = item.categoryList
             this.recommendList = item.recommendList
+            this.commentList = item.commentList
           }
         })
       }
