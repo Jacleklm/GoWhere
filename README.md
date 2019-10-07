@@ -19,7 +19,7 @@
 * 插件：用`swiper`实现轮播效果 
 
 ## 数据来源
-该项目所有的数据（景区名，价格，图片，评论等）都是用[GoWhere-Crawler](https://github.com/Jacleklm/GoWhere-Crawler)爬虫工具爬从[移动端去哪儿网](http://piao.qunar.com/touch/)取生成的`JSON`文件，放在`/static/mock`文件夹中
+该项目所有的数据（景区名，价格，图片，评论等）都是用[GoWhere-Crawler](https://github.com/Jacleklm/GoWhere-Crawler)爬虫工具从[移动端去哪儿网](http://piao.qunar.com/touch/)爬取的，生成的`JSON`文件放在`/static/mock`文件夹中
 
 
 ## 实现的功能
@@ -30,7 +30,7 @@
 - [x] 选择城市
 - [x] 城市搜索
 - [x] 右侧字母与左侧城市块的动画联动效果
-#### 景点详情页
+#### 景点详情页(目前只做了 首页-猜你喜欢 栏目的景点详情页 )
 - [x] 公共画廊组件（点开景点图片即可看到）
 - [x] 渐隐渐现的herder组件
 - [ ] 用户评论组件（功能未完全完善）
