@@ -3,7 +3,7 @@
 
 ## 项目截图
 #### 首页
-![index](./src/assets/img/ingex.png)
+![index](./src/assets/img/index.png)
 #### 城市搜索页
 ![city](./src/assets/img/city.png)
 #### 景点详情页
