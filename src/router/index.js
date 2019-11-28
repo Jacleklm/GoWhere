@@ -8,7 +8,7 @@ import Me from '@/pages/me/Me.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   history: 'mode',
   routes: [
     {
@@ -41,3 +41,19 @@ export default new Router({
     return { x: 0, y: 0 }
   }
 })
+
+// 设置导航守卫。用router.beforeEach注册一个全局守卫，判断是否有登录状态
+router.beforeEach((to, from, next) => {
+  if (to.path === '/login') {
+    next()
+  } else {
+    let token = localStorage.getItem('token')
+    if (token === '' || token === null) {
+      next('/login')
+    } else {
+      next()
+    }
+  }
+})
+
+export default router

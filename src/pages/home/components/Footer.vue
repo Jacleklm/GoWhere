@@ -6,7 +6,7 @@
     </div>
     <div class="icon-wrapper" @click="toCart">
         <div class="iconfont">&#xe604;</div>
-        <p>订单</p>
+        <p>购物车</p>
     </div>
     <div class="icon-wrapper">
         <div class="iconfont">&#xe64d;</div>

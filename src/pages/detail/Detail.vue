@@ -12,7 +12,7 @@ import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailComment from './components/Comment'
 import DetailRecommend from './components/Recommend'
-import axios from 'axios'
+import axios from '@/api/axios.js'
 export default {
   name: 'Detail',
   components: {
@@ -32,8 +32,8 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json')//  获取Ajax数据可以用的方法，去请求一个url（即是括号里的内容）
-        .then(this.getDetailInfoReso)//  axios返回的是一个promise对象，所以可以用then方法
+      axios.get('/api/getDetial')
+        .then(this.getDetailInfoReso)
     },
     getDetailInfoReso (res) {
       res = res.data

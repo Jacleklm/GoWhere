@@ -20,7 +20,7 @@ import HomeWeekend from './components/Weekend'
 import HomeFooter from './components/Footer'
 import HomeBlank from './components/Blank'
 import HomeHotswiper from './components/Hotswiper'
-import axios from 'axios'
+import axios from '@/api/axios.js'
 import { mapState } from 'vuex'
 export default {
   name: 'Home',
@@ -46,8 +46,9 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + this.city)//  获取Ajax数据可以用的方法，去请求一个url（即是括号里的内容）
-        .then(this.getHomeInfoReso)//  axios返回的是一个promise对象，所以可以用then方法
+      axios.get('/api/getIndex?city=' + this.city)
+        .then(this.getHomeInfoReso)
+      // axios.get('/api/index.json?city=' + this.city)
     },
     getHomeInfoReso (res) {
       res = res.data

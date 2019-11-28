@@ -12,18 +12,18 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {//  在开发环境中（dev），当去请求api目录的时候
-        target: 'http://localhost:8080',// 会把请求转发到当前服务器的8080端口上
-        pathRewrite: {//  不过希望把路径做一个替换
-          '^/api': '/static/mock'//  一旦请求的地址是以/api开头的，那么就替换请求到...中
-        }
-      },
-      '/app': {//  在开发环境中（dev），当去请求api目录的时候
         target: 'http://localhost:3000',// 会把请求转发到当前服务器的3000端口上
         changeOrigin: true, // 是否跨域
         pathRewrite: {//  不过希望把路径做一个替换
-          '^/app': '/'//  一旦请求的地址是以/app开头的，那么就替换请求到...中
+          '^/api': '/'//  一旦请求的地址是以/app开头的，那么就替换请求到...中
         }
       }
+      // '/api': {   //  把请求转发到本地的static文件夹实用json文件的配置
+      //   target: 'http://localhost:8080',
+      //   pathRewrite: {
+      //     '^/api': '/static/mock'
+      //   }
+      // },
     },
 
     // Various Dev Server settings

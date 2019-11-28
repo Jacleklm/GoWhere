@@ -8,7 +8,7 @@
 <script>
 import LoginHeader from './components/Header'
 import LoginInput from './components/Input'
-import axios from 'axios'
+import axios from '@/api/axios.js'
 // import { mapState } from 'vuex'
 export default {
   name: 'Login',
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     getLoginInfo () {
-      axios.get('/app/json')
+      axios.get('/api/json')
         .then(this.getLoginInfoReso)
     },
     getLoginInfoReso (res) {
