@@ -16,9 +16,9 @@
       <div class="comment-dsc">
         {{item.comment}}
       </div>
-      <div class="open" @click="changeShowAll">
-        <span class="iconfont" v-show="showAll">&#xe62e;</span>
-        <span class="iconfont" v-show="!showAll">&#xe62d;</span>
+      <div class="open" @click="item.showAll">
+        <span class="iconfont" v-if="item.showAll">&#xe62e;</span>
+        <span class="iconfont" v-else>&#xe62d;</span>
       </div>
       <div class="pic">
         <img
@@ -41,16 +41,6 @@ export default {
   },
   components: {
     CommonGallary
-  },
-  data () {
-    return {
-      showAll: true
-    }
-  },
-  methods: {
-    changeShowAll () {
-      this.showAll = !this.showAll
-    }
   }
 }
 </script>

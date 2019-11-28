@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '@/pages/home/Home.vue'
 import City from '@/pages/city/City.vue'
 import Detail from '@/pages/detail/Detail.vue'
+import Login from '@/pages/login/Login.vue'
+import Me from '@/pages/me/Me.vue'
 
 Vue.use(Router)
 
@@ -23,6 +25,16 @@ export default new Router({
       path: '/detail/:id',
       name: 'Detail',
       component: Detail
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/me',
+      name: 'me',
+      component: Me
     }
   ],
   scrollBehavior (to, from, savedPosition) {

@@ -4,7 +4,7 @@
         <div class="iconfont">&#xe607;</div>
         <p>首页</p>
     </div>
-    <div class="icon-wrapper">
+    <div class="icon-wrapper" @click="toCart">
         <div class="iconfont">&#xe604;</div>
         <p>订单</p>
     </div>
@@ -12,7 +12,7 @@
         <div class="iconfont">&#xe64d;</div>
         <p>发现</p>
     </div>
-    <div class="icon-wrapper">
+    <div class="icon-wrapper" @click="toMe">
         <div class="iconfont">&#xe699;</div>
         <p>我的</p>
     </div>
@@ -21,7 +21,15 @@
 
 <script>
 export default {
-  name: 'HomeFooter'
+  name: 'HomeFooter',
+  methods: {
+    toMe () {
+      this.$router.push('/me')
+    },
+    toCart () {
+      this.$router.push('/login')
+    }
+  }
 }
 </script>
 
